@@ -1,3 +1,5 @@
+import { getImageUrl } from "@/utils/imageLoader";
+
 export default function AboutPage() {
   return (
     <div className="py-20 px-6 md:px-12">
@@ -14,7 +16,7 @@ export default function AboutPage() {
           <div className="flex justify-center items-center h-full">
             <div className="h-full overflow-hidden rounded-lg" style={{maxWidth: "80%"}}>
               <img 
-                src="/images/gallery16.jpg" 
+                src={getImageUrl("/images/gallery16.jpg")}
                 alt="Zhoushen Portrait" 
                 className="w-full h-full object-contain"
                 style={{maxHeight: "400px"}}
