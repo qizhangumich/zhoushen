@@ -30,7 +30,7 @@ export default function AboutPage() {
                 foundations of rhythm and melody were instilled in them from
                 childhood. After studying at the prestigious Shanghai
                 Conservatory of Music, Zhoushen emerged onto the international
-                music scene in 2015 with the debut album "First Light."
+                music scene in 2015 with the debut album &ldquo;First Light.&rdquo;
               </p>
               <p>
                 Known for a powerful vocal range that spans multiple octaves and
@@ -64,7 +64,7 @@ export default function AboutPage() {
                 <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
                   <h3 className="text-xl font-bold mb-2">2015</h3>
                   <p className="text-gray-700">
-                    Released debut album "First Light" to critical acclaim,
+                    Released debut album &ldquo;First Light&rdquo; to critical acclaim,
                     introducing a fresh voice to the music industry.
                   </p>
                 </div>
@@ -82,7 +82,7 @@ export default function AboutPage() {
                 <div className="md:w-1/2 md:pl-12 md:text-left mb-4 md:mb-0">
                   <h3 className="text-xl font-bold mb-2">2017</h3>
                   <p className="text-gray-700">
-                    Sophomore album "Harmonic Fusion" showcased experimental
+                    Sophomore album &ldquo;Harmonic Fusion&rdquo; showcased experimental
                     sounds and collaborations with international artists.
                   </p>
                 </div>
@@ -92,7 +92,7 @@ export default function AboutPage() {
                 <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
                   <h3 className="text-xl font-bold mb-2">2019</h3>
                   <p className="text-gray-700">
-                    "Celestial Journey" album topped charts worldwide and
+                    &ldquo;Celestial Journey&rdquo; album topped charts worldwide and
                     launched the first global tour, performing in 20 countries.
                   </p>
                 </div>
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 <div className="md:w-1/2 md:pl-12 md:text-left mb-4 md:mb-0">
                   <h3 className="text-xl font-bold mb-2">2021</h3>
                   <p className="text-gray-700">
-                    Released "Midnight Serenade" during the global pandemic,
+                    Released &ldquo;Midnight Serenade&rdquo; during the global pandemic,
                     connecting with fans through virtual concerts.
                   </p>
                 </div>
@@ -120,7 +120,7 @@ export default function AboutPage() {
                 <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
                   <h3 className="text-xl font-bold mb-2">2023</h3>
                   <p className="text-gray-700">
-                    Latest album "Eternal Echo" debuted at #1 on global charts,
+                    Latest album &ldquo;Eternal Echo&rdquo; debuted at #1 on global charts,
                     launching the most ambitious world tour to date.
                   </p>
                 </div>
@@ -141,39 +141,39 @@ export default function AboutPage() {
             <div className="bg-white p-6 rounded shadow-md">
               <h3 className="text-xl font-bold mb-2">Grammy Awards</h3>
               <p className="text-gray-700">
-                3 nominations including "Best New Artist" (2016) and "Album of
-                the Year" (2020)
+                3 nominations including &ldquo;Best New Artist&rdquo; (2016) and &ldquo;Album of
+                the Year&rdquo; (2020)
               </p>
             </div>
             <div className="bg-white p-6 rounded shadow-md">
               <h3 className="text-xl font-bold mb-2">Billboard Music Awards</h3>
               <p className="text-gray-700">
-                Winner of "Top Global Artist" (2020) and "Top Streaming Artist"
+                Winner of &ldquo;Top Global Artist&rdquo; (2020) and &ldquo;Top Streaming Artist&rdquo;
                 (2023)
               </p>
             </div>
             <div className="bg-white p-6 rounded shadow-md">
               <h3 className="text-xl font-bold mb-2">MTV Music Awards</h3>
               <p className="text-gray-700">
-                Winner of "Best International Act" (2019, 2022)
+                Winner of &ldquo;Best International Act&rdquo; (2019, 2022)
               </p>
             </div>
             <div className="bg-white p-6 rounded shadow-md">
               <h3 className="text-xl font-bold mb-2">Asian Music Awards</h3>
               <p className="text-gray-700">
-                5-time winner including "Artist of the Year" (2019, 2021, 2023)
+                5-time winner including &ldquo;Artist of the Year&rdquo; (2019, 2021, 2023)
               </p>
             </div>
             <div className="bg-white p-6 rounded shadow-md">
               <h3 className="text-xl font-bold mb-2">BRIT Awards</h3>
               <p className="text-gray-700">
-                Winner of "International Solo Artist" (2020)
+                Winner of &ldquo;International Solo Artist&rdquo; (2020)
               </p>
             </div>
             <div className="bg-white p-6 rounded shadow-md">
               <h3 className="text-xl font-bold mb-2">World Music Awards</h3>
               <p className="text-gray-700">
-                Winner of "World's Best Live Act" (2022)
+                Winner of &ldquo;World&apos;s Best Live Act&rdquo; (2022)
               </p>
             </div>
           </div>
