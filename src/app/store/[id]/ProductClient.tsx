@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { Product } from "@/data/products"; // Assuming you have a Product type
+import { getImageUrl } from "@/utils/imageLoader";
 
 interface ProductClientProps {
   product: Product;
@@ -41,7 +42,7 @@ export default function ProductClient({ product }: ProductClientProps) {
           <div className="bg-gray-100 rounded-lg overflow-hidden">
             {product.images && product.images.length > 0 ? (
               <img
-                src={product.images[0]}
+                src={getImageUrl(product.images[0])}
                 alt={product.name}
                 className="w-full h-auto object-cover"
               />

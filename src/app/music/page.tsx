@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getImageUrl } from "@/utils/imageLoader";
 
 export default function MusicPage() {
   const albums = [
@@ -97,7 +98,7 @@ export default function MusicPage() {
                 <div className="relative h-80 w-full">
                   {album.image ? (
                     <img
-                      src={album.image}
+                      src={getImageUrl(album.image)}
                       alt={`${album.title} album cover`}
                       className="w-full h-full object-cover"
                     />
@@ -167,7 +168,7 @@ export default function MusicPage() {
                 <div className="relative h-80 w-full">
                   {single.image ? (
                     <img
-                      src={single.image}
+                      src={getImageUrl(single.image)}
                       alt={`${single.title} single cover`}
                       className="w-full h-full object-cover"
                     />

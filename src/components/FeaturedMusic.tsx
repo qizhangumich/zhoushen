@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getImageUrl } from "@/utils/imageLoader";
 
 export default function FeaturedMusic() {
   const featuredAlbums = [
@@ -46,7 +47,7 @@ export default function FeaturedMusic() {
               <div className="relative h-80 w-full">
                 {album.image ? (
                   <img
-                    src={album.image}
+                    src={getImageUrl(album.image)}
                     alt={`${album.title} album cover`}
                     className="w-full h-full object-cover"
                   />

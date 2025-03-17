@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Product } from "@/data/products";
+import { getImageUrl } from "@/utils/imageLoader";
 
 interface ProductCardProps {
   product: Product;
@@ -11,7 +12,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       <div className="h-64 bg-gray-200 flex items-center justify-center relative">
         {product.images && product.images.length > 0 ? (
           <img
-            src={product.images[0]}
+            src={getImageUrl(product.images[0])}
             alt={product.name}
             className="object-cover w-full h-full"
           />

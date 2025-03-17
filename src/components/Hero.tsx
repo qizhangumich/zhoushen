@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getImageUrl } from "@/utils/imageLoader";
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: "url('/images/hero-bg.jpg')",
+          backgroundImage: `url('${getImageUrl("/images/hero-bg.jpg")}')`,
           backgroundPosition: "center",
         }}
       >

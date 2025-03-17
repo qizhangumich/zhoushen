@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getImageUrl } from "@/utils/imageLoader";
 
 export default function GalleryPreview() {
   const galleryImages = [
@@ -53,7 +54,7 @@ export default function GalleryPreview() {
             >
               {image.src ? (
                 <img 
-                  src={image.src} 
+                  src={getImageUrl(image.src)} 
                   alt={image.alt}
                   className="w-full h-full object-cover"
                 />

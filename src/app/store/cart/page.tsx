@@ -1,10 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
+import { getImageUrl } from "@/utils/imageLoader";
 
 export default function CartPage() {
   const { items, removeFromCart, updateQuantity, getTotalPrice } = useCart();
+  const [couponCode, setCouponCode] = useState("");
+  const [couponApplied, setCouponApplied] = useState(false);
+  
+  const subtotal = items.reduce((total, item) => total + item.price * item.quantity, 0);
   
   return (
     <div className="py-20 px-6 md:px-12">
@@ -18,7 +24,7 @@ export default function CartPage() {
                 <div key={item.id} className="flex flex-col md:flex-row items-center py-6 border-b">
                   <div className="w-24 h-24 bg-gray-100 flex items-center justify-center mr-6 mb-4 md:mb-0">
                     {item.image ? (
-                      <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                      <img src={getImageUrl(item.image)} alt={item.name} className="w-full h-full object-cover" />
                     ) : (
                       <span className="text-gray-500">No image</span>
                     )}
@@ -76,7 +82,7 @@ export default function CartPage() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex justify-between items-center mb-4">
                 <span className="text-gray-700">Subtotal:</span>
-                <span className="text-xl font-bold">${getTotalPrice().toFixed(2)}</span>
+                <span className="text-xl font-bold">${subtotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between items-center mb-4">
                 <span className="text-gray-700">Shipping:</span>
