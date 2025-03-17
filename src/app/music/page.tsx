@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getImageUrl } from "@/utils/imageLoader";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export default function MusicPage() {
   const albums = [
@@ -74,6 +75,18 @@ export default function MusicPage() {
       description:
         "A collaboration with renowned producer Max Harmony that explores new sonic territories.",
     },
+  ];
+
+  // List of Zhou Shen YouTube performances with video IDs extracted from the URLs
+  const youtubeVideos = [
+    { id: "HMWyN68VpSU", title: "Zhou Shen - Big Fish" },
+    { id: "OpaV2Pjh0es", title: "Zhou Shen - Rubia" },
+    { id: "hBu2O-_SOms", title: "Zhou Shen - Dance of the Waterfront" },
+    { id: "cS4dJvAXiIE", title: "Zhou Shen - Listening Snow Tower" },
+    { id: "eRXgdmB3tNM", title: "Zhou Shen - The Painting of the Voice" },
+    { id: "4XRbsjoq_QA", title: "Zhou Shen - Shadow of the Locust Tree" },
+    { id: "weQevn8YQ2U", title: "Zhou Shen - Glass Bridge" },
+    { id: "3yW6b4lXnF0", title: "Zhou Shen - Rain in the Night" }
   ];
 
   return (
@@ -225,6 +238,56 @@ export default function MusicPage() {
             ))}
           </div>
         </section>
+
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold mb-8">Featured Performances</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {youtubeVideos.map((video) => (
+              <div key={video.id} className="mb-8">
+                <YouTubeEmbed videoId={video.id} title={video.title} className="mb-2" />
+                <h3 className="text-lg font-bold mt-2">{video.title}</h3>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <a
+              href="https://www.youtube.com/playlist?list=RDEMB8AjtjceuzSOt3pkMzm4NQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-black text-white font-bold rounded-full hover:bg-gray-800 transition-colors inline-block"
+            >
+              View More on YouTube
+            </a>
+          </div>
+        </section>
+
+        <div className="bg-gray-100 rounded-lg p-8 text-center">
+          <h2 className="text-2xl font-bold mb-4">Listen on Your Favorite Platform</h2>
+          <p className="text-gray-600 mb-6">
+            Follow Zhoushen on your preferred music streaming service to stay
+            updated with new releases.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="#spotify"
+              className="px-6 py-3 bg-[#1DB954] text-white font-bold rounded-full hover:bg-opacity-90 transition-colors"
+            >
+              Spotify
+            </a>
+            <a
+              href="#apple-music"
+              className="px-6 py-3 bg-[#FA243C] text-white font-bold rounded-full hover:bg-opacity-90 transition-colors"
+            >
+              Apple Music
+            </a>
+            <a
+              href="#youtube-music"
+              className="px-6 py-3 bg-[#FF0000] text-white font-bold rounded-full hover:bg-opacity-90 transition-colors"
+            >
+              YouTube Music
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
